@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body #container {
+  margin: 0;
+  padding: 0;
+}
+
+body #container header {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+body #container hr {
+  margin-bottom: 0px;
+}
+
+body #container nav {
+  display: flex;
+  justify-content: center;
+}
+
+body #container nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body #container nav ul li {
+  padding: 10px 30px;
+}
+
+body #container nav ul li a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body #container .slider {
+  height: 600px;
+}
+
+body #container .slider img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+}
