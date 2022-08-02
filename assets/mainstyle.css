@@ -43,6 +43,10 @@ body #container nav ul li a {
   font-size: 20px;
 }
 
+body #container nav ul li a:hover {
+  color: red;
+}
+
 body #container .slider {
   height: 600px;
 }
