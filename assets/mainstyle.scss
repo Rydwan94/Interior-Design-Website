@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-
+$hovercolor: rgba(239, 160, 1, 0.986);
+$Mainfont: "Lora", serif;
+$navFont: Cambria, Cochin, Georgia, Times, "Times New Roman";
 body {
   margin: 0;
   padding: 0;
@@ -9,11 +11,11 @@ body {
     padding: 0;
 
     header {
-      font-family: "Lora", serif;
+      font-family: $Mainfont;
       font-size: 40px;
       text-align: center;
     }
-    hr {
+    .navUnderline {
       margin-bottom: 0px;
     }
     nav {
@@ -30,14 +32,25 @@ body {
 
         li {
           padding: 10px 30px;
+          &::after {
+            content: "";
+            position: relative;
+            width: 0%;
+            height: 3px;
+            display: block;
+            transition: all 0.3s ease;
+          }
+          &:hover::after {
+            width: 100%;
+            height: 3px;
+            background-color: $hovercolor;
+          }
 
           a {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: $navFont;
             text-decoration: none;
             font-size: 20px;
-          }
-          a:hover{
-            color: red;
+            color: black;
           }
         }
       }
@@ -48,7 +61,51 @@ body {
         object-fit: cover;
         object-position: bottom;
         width: 100%;
-        height: 100%
+        height: 100%;
+      }
+    }
+    .sliderUnderline {
+      width: 700px;
+    }
+    main {
+      article {
+        text-align: center;
+        h2 {
+          font-family: $Mainfont;
+          font-size: 40px;
+          font-weight: 100;
+        }
+        .articleInsideContainer {
+          padding: 0 100px;
+          img {
+            width: 700px;
+            border-radius: 200px 10px 30px 10px;
+          }
+          p {
+            font-size: 20px;
+            font-family: $navFont;
+            text-align: justify;
+          }
+        }
+      }
+      .designExamples {
+        text-align: center;
+        display: block;
+        h2 {
+          font-family: $Mainfont;
+          font-size: 40px;
+          font-weight: 100;
+        }
+        .examplesContainer{
+          display: flex;
+          .firstDesignExample{
+            width: 400px;
+            display: block;
+            img{
+              width: 400px;
+            }
+          }
+        }
       }
     }
   }
