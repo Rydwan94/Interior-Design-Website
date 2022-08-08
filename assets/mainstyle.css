@@ -100,6 +100,7 @@ body #container main article .articleInsideContainer p {
 }
 
 body #container main .designExamples {
+  padding: 0 100px;
   text-align: center;
   display: block;
 }
@@ -112,13 +113,121 @@ body #container main .designExamples h2 {
 
 body #container main .designExamples .examplesContainer {
   display: flex;
+  justify-content: space-evenly;
 }
 
 body #container main .designExamples .examplesContainer .firstDesignExample {
   width: 400px;
   display: block;
+  padding: 0 15px;
 }
 
 body #container main .designExamples .examplesContainer .firstDesignExample img {
   width: 400px;
+  border-radius: 50px 10px 50px 10px;
+  transition: 0.6s;
+}
+
+body #container main .designExamples .examplesContainer .firstDesignExample img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 10px 10px 2px;
+}
+
+body #container main .designExamples .examplesContainer .firstDesignExample p {
+  padding-top: 10px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+body #container main .designExamples .examplesContainer .secondDesignExample {
+  width: 400px;
+  display: block;
+  padding: 0 15px;
+}
+
+body #container main .designExamples .examplesContainer .secondDesignExample img {
+  width: 400px;
+  border-radius: 50px 10px 50px 10px;
+  transition: 0.6s;
+}
+
+body #container main .designExamples .examplesContainer .secondDesignExample img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 10px 10px 2px;
+}
+
+body #container main .designExamples .examplesContainer .secondDesignExample p {
+  padding-top: 10px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+body #container main .designExamples .examplesContainer .thirdDesignExample {
+  width: 400px;
+  display: block;
+  padding: 0 15px;
+}
+
+body #container main .designExamples .examplesContainer .thirdDesignExample img {
+  width: 400px;
+  border-radius: 50px 10px 50px 10px;
+  transition: 0.6s;
+}
+
+body #container main .designExamples .examplesContainer .thirdDesignExample img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 10px 10px 2px;
+}
+
+body #container main .designExamples .examplesContainer .thirdDesignExample p {
+  padding-top: 10px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+body #container footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+body #container footer .topShadow {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 1px;
+  box-shadow: 2px 2px 2px 2px whitesmoke;
+}
+
+body #container footer .iconContainer {
+  margin-top: 10px;
+}
+
+body #container footer .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+body #container footer .fa:hover {
+  opacity: 0.7;
+}
+
+body #container footer .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+body #container footer .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+body #container footer .fa-github {
+  background-color: black;
+  color: white;
 }
