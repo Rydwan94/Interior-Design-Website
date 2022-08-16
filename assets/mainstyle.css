@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+.hide {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,132 +61,206 @@ body #container nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: black;
+  cursor: pointer;
 }
 
-body #container .slider {
+body #container .mainContainer .slider {
   height: 600px;
 }
 
-body #container .slider img {
+body #container .mainContainer .slider img {
   object-fit: cover;
   object-position: bottom;
   width: 100%;
   height: 100%;
 }
 
-body #container .sliderUnderline {
+body #container .mainContainer .sliderUnderline {
   width: 700px;
 }
 
-body #container main article {
+body #container .mainContainer main article {
   text-align: center;
 }
 
-body #container main article h2 {
+body #container .mainContainer main article h2 {
   font-family: "Lora", serif;
   font-size: 40px;
   font-weight: 100;
 }
 
-body #container main article .articleInsideContainer {
+body #container .mainContainer main article .articleInsideContainer {
   padding: 0 100px;
 }
 
-body #container main article .articleInsideContainer img {
-  width: 700px;
+body #container .mainContainer main article .articleInsideContainer img {
+  max-width: 60%;
   border-radius: 200px 10px 30px 10px;
 }
 
-body #container main article .articleInsideContainer p {
+body #container .mainContainer main article .articleInsideContainer p {
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
   text-align: justify;
 }
 
-body #container main .designExamples {
+body #container .mainContainer main .designExamples {
   padding: 0 100px;
   text-align: center;
   display: block;
 }
 
-body #container main .designExamples h2 {
+body #container .mainContainer main .designExamples h2 {
   font-family: "Lora", serif;
   font-size: 40px;
   font-weight: 100;
 }
 
-body #container main .designExamples .examplesContainer {
+body #container .mainContainer main .designExamples .examplesContainer {
   display: flex;
   justify-content: space-evenly;
 }
 
-body #container main .designExamples .examplesContainer .firstDesignExample {
+body #container .mainContainer main .designExamples .examplesContainer .firstDesignExample {
   width: 400px;
   display: block;
   padding: 0 15px;
 }
 
-body #container main .designExamples .examplesContainer .firstDesignExample img {
-  width: 400px;
+body #container .mainContainer main .designExamples .examplesContainer .firstDesignExample img {
+  width: 100%;
   border-radius: 50px 10px 50px 10px;
   transition: 0.6s;
 }
 
-body #container main .designExamples .examplesContainer .firstDesignExample img:hover {
+body #container .mainContainer main .designExamples .examplesContainer .firstDesignExample img:hover {
   transform: scale(1.1);
   box-shadow: 2px 10px 10px 2px;
 }
 
-body #container main .designExamples .examplesContainer .firstDesignExample p {
+body #container .mainContainer main .designExamples .examplesContainer .firstDesignExample p {
   padding-top: 10px;
   font-family: "Lora", serif;
   font-size: 20px;
 }
 
-body #container main .designExamples .examplesContainer .secondDesignExample {
+body #container .mainContainer main .designExamples .examplesContainer .secondDesignExample {
   width: 400px;
   display: block;
   padding: 0 15px;
 }
 
-body #container main .designExamples .examplesContainer .secondDesignExample img {
-  width: 400px;
+body #container .mainContainer main .designExamples .examplesContainer .secondDesignExample img {
+  width: 100%;
   border-radius: 50px 10px 50px 10px;
   transition: 0.6s;
 }
 
-body #container main .designExamples .examplesContainer .secondDesignExample img:hover {
+body #container .mainContainer main .designExamples .examplesContainer .secondDesignExample img:hover {
   transform: scale(1.1);
   box-shadow: 2px 10px 10px 2px;
 }
 
-body #container main .designExamples .examplesContainer .secondDesignExample p {
+body #container .mainContainer main .designExamples .examplesContainer .secondDesignExample p {
   padding-top: 10px;
   font-family: "Lora", serif;
   font-size: 20px;
 }
 
-body #container main .designExamples .examplesContainer .thirdDesignExample {
+body #container .mainContainer main .designExamples .examplesContainer .thirdDesignExample {
   width: 400px;
   display: block;
   padding: 0 15px;
 }
 
-body #container main .designExamples .examplesContainer .thirdDesignExample img {
-  width: 400px;
+body #container .mainContainer main .designExamples .examplesContainer .thirdDesignExample img {
+  width: 100%;
   border-radius: 50px 10px 50px 10px;
   transition: 0.6s;
 }
 
-body #container main .designExamples .examplesContainer .thirdDesignExample img:hover {
+body #container .mainContainer main .designExamples .examplesContainer .thirdDesignExample img:hover {
   transform: scale(1.1);
   box-shadow: 2px 10px 10px 2px;
 }
 
-body #container main .designExamples .examplesContainer .thirdDesignExample p {
+body #container .mainContainer main .designExamples .examplesContainer .thirdDesignExample p {
   padding-top: 10px;
   font-family: "Lora", serif;
   font-size: 20px;
+}
+
+body #container .projectsContainer {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+
+body #container .projectsContainer .firstProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+body #container .projectsContainer .secondProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+body #container .projectsContainer .thirdProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+body #container .projectsContainer .fourthProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body #container .projectsContainer img {
+  max-width: 80%;
+  border-radius: 200px 60px 200px 200px;
+  transition: 1s;
+}
+
+body #container .projectsContainer img:hover {
+  border-radius: 60px 200px 60px 200px;
+}
+
+body #container .projectsContainer h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+body #container .projectsContainer button {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 20px 20px 20px 20px;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+body #container .projectsContainer button:hover, body #container .projectsContainer button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(239, 160, 1, 0.986);
+  transform: translateY(-0.25em);
+  color: rgba(239, 160, 1, 0.986);
+  border: 1px solid rgba(239, 160, 1, 0.986);
 }
 
 body #container footer {

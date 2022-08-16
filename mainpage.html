@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./assets/mainstyle.css" />
@@ -19,71 +23,127 @@
       <hr class="navUnderline" />
       <nav>
         <ul>
-          <li><a href="./index.html">Homepage</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">About us</a></li>
+          <li><a href="./index.html">Landing Page</a></li>
+          <li><a id="showMainSite">Homepage</a></li>
+          <li>
+            <a id="showProjects">Projects</a>
+          </li>
         </ul>
       </nav>
-      <section class="slider">
-        <img src="./src/slider.jpg" alt="Slider Image" />
-      </section>
-      <hr class="sliderUnderline" />
-      <main>
-        <article>
-          <h2>About me</h2>
-          <div class="articleInsideContainer">
-            <img src="./src/articleImg.jpeg" alt="Article Image" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae illum rem numquam omnis asperiores fuga quaerat ipsum
-              doloremque aperiam voluptates veritatis, eligendi amet quam eum!
-              Tempora nemo aspernatur veritatis dolorum voluptas similique
-              voluptates, reiciendis quod. Facere, ipsum optio rerum sequi quod
-              ipsam, aliquam qui error sunt et veritatis accusantium totam
-              soluta. Esse, eos? Aspernatur minima, deserunt tempore id non
-              cupiditate enim voluptatum alias beatae itaque, iste quia?
-              Voluptatem officia asperiores, adipisci eius laborum eaque illum
-              vel nulla voluptates eos provident perferendis reprehenderit id
-              fuga pariatur sint, distinctio culpa repudiandae soluta non
-              assumenda esse. Culpa, impedit? Quam ab unde aperiam atque!
-            </p>
+      <div id="mainSiteContainer" class="mainContainer">
+        <section class="slider">
+          <img src="./src/slider.jpg" alt="Slider Image" />
+        </section>
+        <hr class="sliderUnderline" />
+        <main>
+          <article>
+            <h2>About me</h2>
+            <div class="articleInsideContainer">
+              <img src="./src/articleImg.jpeg" alt="Article Image" />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae illum rem numquam omnis asperiores fuga quaerat
+                ipsum doloremque aperiam voluptates veritatis, eligendi amet
+                quam eum! Tempora nemo aspernatur veritatis dolorum voluptas
+                similique voluptates, reiciendis quod. Facere, ipsum optio rerum
+                sequi quod ipsam, aliquam qui error sunt et veritatis
+                accusantium totam soluta. Esse, eos? Aspernatur minima, deserunt
+                tempore id non cupiditate enim voluptatum alias beatae itaque,
+                iste quia? Voluptatem officia asperiores, adipisci eius laborum
+                eaque illum vel nulla voluptates eos provident perferendis
+                reprehenderit id fuga pariatur sint, distinctio culpa
+                repudiandae soluta non assumenda esse. Culpa, impedit? Quam ab
+                unde aperiam atque!
+              </p>
+            </div>
+          </article>
+          <hr class="articleUnderline" />
+          <div class="designExamples">
+            <h2>Design Examples</h2>
+            <div class="examplesContainer">
+              <div class="firstDesignExample">
+                <img
+                  src="./src/design Example 1.jpeg"
+                  alt="first example project"
+                />
+                <p>Lorem ipsum dolor</p>
+              </div>
+              <div class="secondDesignExample">
+                <img
+                  src="./src/design Example 2.jpeg"
+                  alt="Second example project"
+                />
+                <p>Lorem ipsum dolor</p>
+              </div>
+              <div class="thirdDesignExample">
+                <img
+                  src="./src/design Example 3.jpeg"
+                  alt="
+                  third example project"
+                />
+                <p>Lorem ipsum dolor</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <hr class="articleUnderline" />
-        <div class="designExamples">
-          <h2>Design Examples</h2>
-          <div class="examplesContainer">
-            <div class="firstDesignExample">
-              <img src="./src/design Example 1.jpeg" alt="" />
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="secondDesignExample">
-              <img
-                src="https://images.pexels.com/photos/279648/pexels-photo-279648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="thirdDesignExample">
-              <img
-                src="https://images.pexels.com/photos/3356416/pexels-photo-3356416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-              <p>Lorem ipsum dolor</p>
-            </div>
-          </div>
+        </main>
+      </div>
+      <div class="projectsContainer" id="myProjectsContainer">
+        <div class="firstProject">
+          <img
+            src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Modern Style"
+          />
+          <h2>Modern style</h2>
+          <button>Choose</button>
         </div>
-      </main>
+        <div class="secondProject">
+          <img
+            src="http://cdn.home-designing.com/wp-content/uploads/2022/03/unique-rug.jpg"
+            alt="
+          Scandinavian Style"
+          />
+          <h2>Scandinavian Style</h2>
+          <button>Choose</button>
+        </div>
+        <div class="thirdProject">
+          <img
+            src="https://images.pexels.com/photos/6908559/pexels-photo-6908559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="
+          Industrial Style"
+          />
+          <h2>Industrial style</h2>
+          <button>Choose</button>
+        </div>
+        <div class="fourthProject">
+          <img
+            src="https://images.pexels.com/photos/7195529/pexels-photo-7195529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="
+          Electric style"
+          />
+          <h2>Electric style</h2>
+          <button>Choose</button>
+        </div>
+      </div>
+      <div class="formContainer">
+
+      </div>
       <footer>
         <div class="topShadow"></div>
         <div class="iconContainer">
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-github"></a>
+          <a
+            href="https://www.linkedin.com/in/%C5%82ukasz-rydwa%C5%84ski-237469173/"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100001499895361"
+            class="fa fa-facebook"
+          ></a>
+          <a href="https://github.com/Rydwan94" class="fa fa-github"></a>
         </div>
       </footer>
     </div>
 
+    <script src="./scripts/landingPage.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
