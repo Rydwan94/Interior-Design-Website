@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-.hide {
-  display: none;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -62,6 +58,10 @@ body #container nav ul li a {
   font-size: 20px;
   color: black;
   cursor: pointer;
+}
+
+body #container .mainContainer {
+  padding-bottom: 150px;
 }
 
 body #container .mainContainer .slider {
@@ -192,6 +192,7 @@ body #container .mainContainer main .designExamples .examplesContainer .thirdDes
 
 body #container .projectsContainer {
   padding-top: 100px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,7 +232,7 @@ body #container .projectsContainer .fourthProject {
 }
 
 body #container .projectsContainer img {
-  max-width: 80%;
+  max-width: 60%;
   border-radius: 200px 60px 200px 200px;
   transition: 1s;
 }
@@ -246,7 +247,7 @@ body #container .projectsContainer h2 {
 }
 
 body #container .projectsContainer button {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   background-color: white;
   color: black;
@@ -263,19 +264,101 @@ body #container .projectsContainer button:hover, body #container .projectsContai
   border: 1px solid rgba(239, 160, 1, 0.986);
 }
 
-body #container footer {
-  margin-top: 50px;
+body #container .formContainer .form {
+  width: 50%;
   display: flex;
   justify-content: center;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body #container .formContainer .form .formImg {
+  z-index: 1;
+  box-shadow: 0.4em -0.1em 0.2em -0.2em black;
+}
+
+body #container .formContainer .form .formImg img {
+  height: 500px;
+  box-shadow: 10px black;
+}
+
+body #container .formContainer .form .InputsButtonsContainer {
+  border-radius: 0 10px 10px 0;
+  padding: 0 20px;
+  width: 310px;
+  height: 500px;
+  background-color: rgba(239, 160, 1, 0.986);
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer {
+  width: 300px;
+  height: 350px;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer input {
+  color: black;
+  display: block;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px 20px 10px 20px;
+  font-size: 20px;
+  margin: 5px 0;
+  border: none;
+  transition: 0.5s;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer input:focus {
+  border: none;
+  outline: none;
+  background-color: #ffdda6;
+  box-shadow: -0.2rem 0.3rem 0.4rem 0.2rem black;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer label {
+  padding: 20px 0;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer .buttonsContainer {
+  margin-top: 90px;
+  text-align: center;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer .buttonsContainer button {
+  padding: 5px 10px;
+  background-color: rgba(239, 160, 1, 0.986);
+  font-size: 20px;
+  box-shadow: 0.1em 0.1em 0 0 white, inset 0.1em 0.1em 0 0 white;
+  border: none;
+  outline: none;
+  transition: 0.8s;
+}
+
+body #container .formContainer .form .InputsButtonsContainer .inputsContainer .buttonsContainer button:hover, body #container .formContainer .form .InputsButtonsContainer .inputsContainer .buttonsContainer button:focus {
+  box-shadow: 0 0 0 0 black, inset 6em 3.5em 0 0  black;
+  color: white;
+}
+
+body #container footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+  background-color: red;
+  text-align: center;
   background-color: whitesmoke;
 }
 
 body #container footer .topShadow {
   position: absolute;
-  background-color: whitesmoke;
+  background-color: rgba(222, 184, 135, 0.432);
   width: 100%;
   height: 1px;
-  box-shadow: 2px 2px 2px 2px whitesmoke;
+  box-shadow: 0em -0.1em 0.2em 0.1em burlywood;
 }
 
 body #container footer .iconContainer {
@@ -283,7 +366,7 @@ body #container footer .iconContainer {
 }
 
 body #container footer .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   width: 50px;
   text-align: center;

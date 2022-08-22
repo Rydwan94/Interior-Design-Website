@@ -17,19 +17,21 @@
   </head>
   <body>
     <div id="container">
-      <header>
-        <p>Interior Design</p>
-      </header>
-      <hr class="navUnderline" />
-      <nav>
-        <ul>
-          <li><a href="./index.html">Landing Page</a></li>
-          <li><a id="showMainSite">Homepage</a></li>
-          <li>
-            <a id="showProjects">Projects</a>
-          </li>
-        </ul>
-      </nav>
+      <div id="navBar">
+        <header>
+          <p>Interior Design</p>
+        </header>
+        <hr class="navUnderline" />
+        <nav>
+          <ul>
+            <li><a href="./index.html">Landing Page</a></li>
+            <li><a id="showMainSite">Homepage</a></li>
+            <li>
+              <a id="showProjects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div id="mainSiteContainer" class="mainContainer">
         <section class="slider">
           <img src="./src/slider.jpg" alt="Slider Image" />
@@ -87,14 +89,14 @@
           </div>
         </main>
       </div>
-      <div class="projectsContainer" id="myProjectsContainer">
+      <div id="myProjectsContainer" class="projectsContainer">
         <div class="firstProject">
           <img
             src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Modern Style"
           />
           <h2>Modern style</h2>
-          <button>Choose</button>
+          <button id="firsProjectButton">Choose</button>
         </div>
         <div class="secondProject">
           <img
@@ -103,7 +105,7 @@
           Scandinavian Style"
           />
           <h2>Scandinavian Style</h2>
-          <button>Choose</button>
+          <button id="secondProjectButton">Choose</button>
         </div>
         <div class="thirdProject">
           <img
@@ -112,7 +114,7 @@
           Industrial Style"
           />
           <h2>Industrial style</h2>
-          <button>Choose</button>
+          <button id="thirdProjectButton">Choose</button>
         </div>
         <div class="fourthProject">
           <img
@@ -121,11 +123,49 @@
           Electric style"
           />
           <h2>Electric style</h2>
-          <button>Choose</button>
+          <button id="fourthProjectButton">Choose</button>
         </div>
       </div>
-      <div class="formContainer">
-
+      <div id="formContainer" class="formContainer">
+        <div class="form">
+          <div class="formImg">
+            <img
+              src="https://images.pexels.com/photos/827518/pexels-photo-827518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="InputsButtonsContainer">
+            <div class="inputsContainer">
+              <label for="name">Imię</label>
+              <input type="text" name="name" id="name" placeholder="Imię..." />
+              <label for="last_name">Nazwisko</label>
+              <input
+                type="text"
+                name="last_name"
+                id="lastName"
+                placeholder="Nazwisko..."
+              />
+              <label for="number">Numer</label>
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="Telefon..."
+              />
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email..."
+              />
+              <div class="buttonsContainer">
+                <button>Zatwierdź</button>
+                <button>Wróć</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer>
         <div class="topShadow"></div>
@@ -143,7 +183,6 @@
       </footer>
     </div>
 
-    <script src="./scripts/landingPage.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
