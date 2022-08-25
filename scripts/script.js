@@ -1,10 +1,9 @@
-
-const mainSiteContainer = document.getElementById("mainSiteContainer");
-const myProjectsContainer = document.getElementById("myProjectsContainer");
 const formContainer = document.getElementById("formContainer")
 const showMainSite = document.getElementById("showMainSite");
 const navBar = document.getElementById("navBar")
 
+myProjectsContainer.style.display = "none"
+formContainer.style.display = "none"
 
 const showForm = (id) => {
   id.addEventListener("click", () =>{
@@ -20,19 +19,17 @@ showForm(thirdProjectButton)
 showForm(fourthProjectButton)
 
 
-myProjectsContainer.style.display = "none"
-formContainer.style.display = "none"
+const showAndHide = (listener, firstId, secondId) => {
+  listener.addEventListener("click", () => {
+    document.getElementById(firstId).style.display ="none"
+    document.getElementById(secondId).style.display ="block"
+  })
+}
+
+showAndHide(showProjects,"mainSiteContainer","myProjectsContainer")
+showAndHide(showMainSite,"myProjectsContainer", "mainSiteContainer" )
 
 
-showProjects.addEventListener("click", () => {
-  mainSiteContainer.style.display = "none";
-  myProjectsContainer.style.display = "block";
-});
-
-showMainSite.addEventListener("click", () => {
-  myProjectsContainer.style.display = "none"
-  mainSiteContainer.style.display = "block"
-});
 
 
 class Projects{
@@ -46,4 +43,20 @@ class Projects{
 }
 
 let modernProject = new Projects("firsProjectButton", "Modern Style", "sdad", 200)
+
+class ShowForm{
+  constructor(firstId, secondId, thirdId){
+    this.firstId = document.getElementById(firstId)
+    this.secondId = document.getElementById(secondId)
+    this.thirdId = document.getElementById(thirdId)
+  }
+  showAndHide(firstId, secondId, thirdId){
+    firstId.addEventListener("click", () => {
+      secondId.style.display = "none"
+      thirdId.style.display = "block"
+    })
+  }
+}
+
+let hide = ShowForm("myProjectsContainer", "formContainer", "mainSiteContainer")
 
