@@ -181,9 +181,9 @@ body {
           flex-direction: column;
           align-items: center;
           margin-bottom: 60px;
-          background-color: $backgroundColor;
+          background-color:rgb(0, 16, 66);
           border-radius: 200px 60px 20px 20px;
-          box-shadow: 0 0.9em 0.5em -0.2em $hovercolor;
+          box-shadow: 0 0.9em 0.5em -0.2em rgb(0, 16, 66);
           transition: 0.7s;
           &:hover {
             border-radius: 200px 200px 60px 200px;
@@ -195,9 +195,9 @@ body {
           flex-direction: column;
           align-items: center;
           margin-bottom: 60px;
-          background-color: $backgroundColor;
+          background-color: #9a9287;
           border-radius: 200px 60px 20px 20px;
-          box-shadow: 0 0.9em 0.5em -0.2em $hovercolor;
+          box-shadow: 0 0.9em 0.5em -0.2em #9a9287;
           transition: 0.7s;
           &:hover {
             border-radius: 200px 200px 60px 200px;
@@ -214,9 +214,9 @@ body {
           flex-direction: column;
           align-items: center;
           margin-bottom: 60px;
-          background-color: $backgroundColor;
+          background-color: rgb(75, 37, 0);
           border-radius: 200px 60px 20px 20px;
-          box-shadow: 0 0.9em 0.5em -0.2em $hovercolor;
+          box-shadow: 0 0.9em 0.5em -0.2em rgb(75, 37, 0);
           transition: 0.7s;
           &:hover {
             border-radius: 200px 200px 60px 200px;
@@ -228,9 +228,9 @@ body {
           flex-direction: column;
           align-items: center;
           margin-bottom: 60px;
-          background-color: $backgroundColor;
+          background-color: rgb(136, 42, 119);
           border-radius: 200px 60px 20px 20px;
-          box-shadow: 0 0.9em 0.5em -0.2em $hovercolor;
+          box-shadow: 0 0.9em 0.5em -0.2em rgb(136, 42, 119);
           transition: 0.7s;
           &:hover {
             border-radius: 200px 200px 60px 200px;
@@ -240,7 +240,7 @@ body {
       img {
         width: 600px;
         height: 364px;
-        border: 4px solid white;
+        border-bottom: 2px solid white;
         border-radius: 200px 60px 200px 200px;
         transition: 0.7s;
         &:hover {

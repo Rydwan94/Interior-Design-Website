@@ -1,62 +1,59 @@
-const formContainer = document.getElementById("formContainer")
-const showMainSite = document.getElementById("showMainSite");
-const navBar = document.getElementById("navBar")
-
-myProjectsContainer.style.display = "none"
-formContainer.style.display = "none"
-
-const showForm = (id) => {
-  id.addEventListener("click", () =>{
-    myProjectsContainer.style.display = "none";
-      navBar.style.display = "none"
-      formContainer.style.display = "block"
-  })
-}
-
-showForm(firsProjectButton)
-showForm(secondProjectButton)
-showForm(thirdProjectButton)
-showForm(fourthProjectButton)
-
-
-const showAndHide = (listener, firstId, secondId) => {
-  listener.addEventListener("click", () => {
-    document.getElementById(firstId).style.display ="none"
-    document.getElementById(secondId).style.display ="block"
-  })
-}
-
-showAndHide(showProjects,"mainSiteContainer","myProjectsContainer")
-showAndHide(showMainSite,"myProjectsContainer", "mainSiteContainer" )
-
-
-
-
-class Projects{
-  constructor(id,projectName, img, price){
-    this.id = document.getElementById(id),
-    this.projectName = projectName,
-    this.img = img,
-    this.price = price
+class showAndHide{
+  constructor(firstId, secondId, thirdId, fourthId){
+  this.firstId = document.getElementById(firstId);
+  this.secondId = document.getElementById(secondId);
+  this.thirdId = document.getElementById(thirdId)
+  this.fourthId = document.getElementById(fourthId)
   }
-
-}
-
-let modernProject = new Projects("firsProjectButton", "Modern Style", "sdad", 200)
-
-class ShowForm{
-  constructor(firstId, secondId, thirdId){
-    this.firstId = document.getElementById(firstId)
-    this.secondId = document.getElementById(secondId)
-    this.thirdId = document.getElementById(thirdId)
+  hide(){
+    this.firstId.style.display = "none"
+    this.secondId.style.display = "none"
   }
-  showAndHide(firstId, secondId, thirdId){
-    firstId.addEventListener("click", () => {
-      secondId.style.display = "none"
-      thirdId.style.display = "block"
+  listenerToForm(){
+    this.firstId.addEventListener("click", () => {
+      this.secondId.style.display = "none"
+      this.thirdId.style.display = "none"
+      this.fourthId.style.display = "block"
+    })
+  }
+  showMainSiteAndProjects(){
+    this.firstId.addEventListener("click", () => {
+      this.secondId.style.display = "none"
+      this.thirdId.style.display = "block"
     })
   }
 }
 
-let hide = ShowForm("myProjectsContainer", "formContainer", "mainSiteContainer")
+const hideContainers = new showAndHide("myProjectsContainer","formContainer", null, null)
+const firstBtn = new showAndHide("firstProjectButton", "myProjectsContainer", "navBar", "formContainer")
+const secondBtn = new showAndHide("secondProjectButton", "myProjectsContainer", "navBar", "formContainer")
+const thirdBtn = new showAndHide("thirdProjectButton", "myProjectsContainer", "navBar", "formContainer")
+const FourthBtn = new showAndHide("fourthProjectButton", "myProjectsContainer", "navBar", "formContainer")
+const showProjects = new showAndHide("showProjects", "mainSiteContainer", "myProjectsContainer", null)
+const showMainSite = new showAndHide("showMainSite", "myProjectsContainer", "mainSiteContainer")
+hideContainers.hide()
+firstBtn.listenerToForm()
+secondBtn.listenerToForm()
+thirdBtn.listenerToForm()
+FourthBtn.listenerToForm()
+showProjects.showMainSiteAndProjects()
+showMainSite.showMainSiteAndProjects()
 
+
+
+
+class Projects {
+  constructor(id, projectName, img, price) {
+    (this.id = document.getElementById(id)),
+      (this.projectName = projectName),
+      (this.img = img),
+      (this.price = price);
+  }
+}
+
+let modernProject = new Projects(
+  "firsProjectButton",
+  "Modern Style",
+  "sdad",
+  200
+);

@@ -211,9 +211,9 @@ body #container .projectsContainer .firstHalfProjects .firstProject {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  background-color: rgba(245, 172, 25, 0.986);
+  background-color: #001042;
   border-radius: 200px 60px 20px 20px;
-  box-shadow: 0 0.9em 0.5em -0.2em rgba(239, 160, 1, 0.986);
+  box-shadow: 0 0.9em 0.5em -0.2em #001042;
   transition: 0.7s;
 }
 
@@ -227,9 +227,9 @@ body #container .projectsContainer .firstHalfProjects .secondProject {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  background-color: rgba(245, 172, 25, 0.986);
+  background-color: #9a9287;
   border-radius: 200px 60px 20px 20px;
-  box-shadow: 0 0.9em 0.5em -0.2em rgba(239, 160, 1, 0.986);
+  box-shadow: 0 0.9em 0.5em -0.2em #9a9287;
   transition: 0.7s;
 }
 
@@ -249,9 +249,9 @@ body #container .projectsContainer .secondHalfProjects .thirdProject {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  background-color: rgba(245, 172, 25, 0.986);
+  background-color: #4b2500;
   border-radius: 200px 60px 20px 20px;
-  box-shadow: 0 0.9em 0.5em -0.2em rgba(239, 160, 1, 0.986);
+  box-shadow: 0 0.9em 0.5em -0.2em #4b2500;
   transition: 0.7s;
 }
 
@@ -265,9 +265,9 @@ body #container .projectsContainer .secondHalfProjects .fourthProject {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-  background-color: rgba(245, 172, 25, 0.986);
+  background-color: #882a77;
   border-radius: 200px 60px 20px 20px;
-  box-shadow: 0 0.9em 0.5em -0.2em rgba(239, 160, 1, 0.986);
+  box-shadow: 0 0.9em 0.5em -0.2em #882a77;
   transition: 0.7s;
 }
 
@@ -278,7 +278,7 @@ body #container .projectsContainer .secondHalfProjects .fourthProject:hover {
 body #container .projectsContainer img {
   width: 600px;
   height: 364px;
-  border: 4px solid white;
+  border-bottom: 2px solid white;
   border-radius: 200px 60px 200px 200px;
   transition: 0.7s;
 }
